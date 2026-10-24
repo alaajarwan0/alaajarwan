@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+  <!-- Document metadata -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#f4f2ee">
+    <meta name="description" content="Alaa Jarwan — UI/UX designer in Amman, Jordan. Explore digital experiences, Figma plugins and Figma AI skills.">
+    <title>Alaa Jarwan — UI/UX Designer</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/geist.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Skill content and reusable detail template -->
+    <link rel="stylesheet" href="skills.css">
+    <script src="skills-data.js" defer></script>
+    <script src="skills.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="nav-wrap">
+      <nav aria-label="Main">
+        <a class="monogram" href="index.html" aria-label="Home">A</a>
+        <i class="divider"></i>
+        <a class="nav-link roll" href="index.html#work">
+          <span>Work</span>
+          <span aria-hidden="true">Work</span>
+        </a>
+        <a class="nav-link roll" href="index.html#about">
+          <span>About</span>
+          <span aria-hidden="true">About</span>
+        </a>
+        <i class="divider"></i>
+        <span class="clock">
+          <b class="dot"></b>
+          <time id="clock">AMM</time>
+        </span>
+        <i class="divider clock-divider"></i>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="3.5"/>
+            <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>
+          </svg>
+        </button>
+        <a class="say-hi" href="mailto:alaajarwan38@gmail.com" aria-label="Say Hi👋🏻">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20 11a8 7 0 0 1-8 7H7l-4 3 1-6a7 7 0 0 1-1-4 8 7 0 0 1 17 0Z"/>
+            <path d="M7 11h1m3 0h1m3 0h1"/>
+          </svg>
+          <span>Say Hi👋🏻</span>
+        </a>
+      </nav>
+    </header>
+    <main id="main">
+      <noscript>Please enable JavaScript to view the portfolio.</noscript>
+    </main>
+    <!-- Inert homepage content prevents unused images loading on detail routes. -->
+    <template id="home-content">
+
+      <!-- Hero -->
+      <section class="hero-frame" aria-label="Introduction">
+        <div class="hero">
+          <div class="hero-content">
+            <div class="portrait-wrap enter">
+              <img src="assets/optimized/portrait-512.webp" srcset="assets/optimized/portrait-256.webp 256w, assets/optimized/portrait-512.webp 512w" sizes="(max-width: 809px) 199px, 248px" loading="eager" fetchpriority="high" decoding="async" alt="Alaa Jarwan" class="portrait" width="160" height="160">
+            </div>
+            <div class="identity enter">
+              <b class="status-dot"></b>
+              <span>Alaa Jarwan</span>
+              <i class="divider"></i>
+              <span class="location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Amman, JO</span>
+            </div>
+            <h1 class="reveal words">UI/UX designer,<br>from idea to <em>experience.</em></h1>
+            <p class="hero-subtitle enter">UI/UX design &nbsp;·&nbsp; Product design &nbsp;·&nbsp; Web development</p>
+            <div class="dock-wrap enter">
+              <p class="eyebrow">Selected work</p>
+              <div class="dock" id="dock"></div>
+            </div>
+          </div>
+          <a class="hero-corner small-pill" href="assets/Alaa-Jarwan-CV.pdf" download>↓&nbsp; Download CV</a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section about" id="about">
+        <p class="eyebrow reveal">(02) — About</p>
+        <h2 class="about-heading reveal words">I’m a UI/UX designer. I design digital experiences and build them - <span class="muted">with thoughtful interfaces and hands-on development.</span></h2>
+        <div class="services reveal">
+          <a href="#work" data-category="uiux" class="service">
+            <span class="service-icon">◇</span>
+            <h3>UI/UX Projects</h3>
+            <p>Interfaces, user journeys and<br>digital experiences.</p>
+          </a>
+          <a href="#work" data-category="plugins" class="service">
+            <span class="service-icon">⌘</span>
+            <h3>Figma Plugins</h3>
+            <p>Plugins I create and publish<br>for the Figma community.</p>
+          </a>
+          <a href="#work" data-category="skills" class="service">
+            <span class="service-icon accent-bg">✧</span>
+            <h3>Figma AI Skills</h3>
+            <p>Exploring AI-assisted<br>design workflows.</p>
+          </a>
+        </div>
+
+        <!-- Daily Toolbox -->
+        <div class="toolbox reveal">
+          <p class="eyebrow">Daily toolbox</p>
+          <ul aria-label="Tools and technologies">
+            <li>
+              <button type="button" class="tool-button" aria-label="Figma">
+                <img src="assets/tools/Figma.svg" alt="" width="48" height="48" decoding="async" loading="lazy">
+              </button>
+            </li>
+            <li>
+              <button type="button" class="tool-button" aria-label="Framer">
+                <img src="assets/tools/Framer.svg" alt="" width="48" height="48" decoding="async" loading="lazy">
+              </button>
+            </li>
+            <li>
+              <button type="button" class="tool-button" aria-label="Webflow">
+                <img src="assets/tools/Webflow.svg" alt="" width="48" height="48" decoding="async" loading="lazy">
+              </button>
+            </li>
+            <li>
+              <button type="button" class="tool-button" aria-label="Google Labs">
+                <img src="assets/tools/google-labs.svg" alt="" width="48" height="48" decoding="async" loading="lazy">
+              </button>
+            </li>
+            <li>
+              <button type="button" class="tool-button" aria-label="Claude Design">
+                <img src="assets/tools/claude.svg" alt="" width="48" height="48" decoding="async" loading="lazy">
+              </button>
+            </li>
+            <li>
+              <button type="button" class="tool-button" aria-label="Codex">
+                <img src="assets/tools/codex.svg" alt="" width="48" height="48" decoding="async" loading="lazy">
+              </button>
+            </li>
+            <li>
+              <button type="button" class="tool-button" aria-label="Notion">
+                <img src="assets/tools/Notion.svg" alt="" width="48" height="48" decoding="async" loading="lazy">
+              </button>
+            </li>
+            <li>
+              <button type="button" class="tool-button" aria-label="HTML5">
+                <img src="assets/tools/HTML5.svg" alt="" width="48" height="48" decoding="async" loading="lazy">
+              </button>
+            </li>
+            <li>
+              <button type="button" class="tool-button" aria-label="CSS3">
+                <img src="assets/tools/CSS3.svg" alt="" width="48" height="48" decoding="async" loading="lazy">
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section work" id="work">
+        <p class="eyebrow reveal">(03) — Selected work</p>
+        <h2 class="reveal words">Selected work</h2>
+        <div class="filters" role="group" aria-label="Project categories">
+          <button type="button" data-filter="uiux" aria-pressed="true">UI/UX Projects</button>
+          <button type="button" data-filter="plugins" aria-pressed="false">Figma Plugins</button>
+          <button type="button" data-filter="skills" aria-pressed="false">Figma AI Skills</button>
+        </div>
+
+        <!-- Figma Plugins -->
+        <div id="plugin-intro" class="plugin-intro" hidden>
+          <h3>Figma plugins I create and publish</h3>
+          <p>I build plugins that bring useful tools directly into Figma. Explore my published creations below.</p>
+        </div>
+        <div class="project-grid" id="projects"></div>
+        <div id="plugin-community" class="plugin-community" hidden>
+          <a class="pill" href="https://www.figma.com/@alaajarwan" target="_blank" rel="noopener noreferrer">View my Figma Community ↗</a>
+        </div>
+        <div id="empty-state" class="empty-state" hidden aria-live="polite"></div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section experience" id="experience">
+        <p class="eyebrow reveal">(04) — Experience</p>
+        <h2 class="reveal words">Thoughtful design.<br class="mobile-break"> Practical experience.</h2>
+        <div class="experience-list reveal">
+          <div class="experience-row">
+            <span class="company-icon">PSI</span>
+            <div>
+              <h3>Property Shop Investment</h3>
+              <p>UI/UX design · Outstanding Performance Award, 2024</p>
+            </div>
+            <time>FEB 2024 — PRESENT</time>
+          </div>
+          <div class="experience-row">
+            <span class="company-icon clay">AJ</span>
+            <div>
+              <h3>Freelance</h3>
+              <p>UI/UX Designer</p>
+            </div>
+            <time>NOV 2021 — 2023</time>
+          </div>
+        </div>
+        <a class="pill reveal" href="assets/Alaa-Jarwan-CV.pdf" download>Download my résumé <span>↗</span></a>
+      </section>
+    </template>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <span class="contact-badge reveal"><b class="dot"></b>Let’s talk about your project</span>
+      <h2 class="footer-heading reveal words">Let’s create <em>something good.</em></h2>
+      <div class="contact-actions reveal">
+        <a class="pill primary" href="mailto:alaajarwan38@gmail.com"><svg class="email-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path d="M17 21.25H7C3.35 21.25 1.25 19.15 1.25 15.5V8.5C1.25 4.85 3.35 2.75 7 2.75H17C20.65 2.75 22.75 4.85 22.75 8.5V15.5C22.75 19.15 20.65 21.25 17 21.25ZM7 4.25C4.14 4.25 2.75 5.64 2.75 8.5V15.5C2.75 18.36 4.14 19.75 7 19.75H17C19.86 19.75 21.25 18.36 21.25 15.5V8.5C21.25 5.64 19.86 4.25 17 4.25H7Z" fill="currentColor"/>
+          <path d="M11.9998 12.87C11.1598 12.87 10.3098 12.61 9.65978 12.08L6.52978 9.57997C6.20978 9.31997 6.14978 8.84997 6.40978 8.52997C6.66978 8.20997 7.13978 8.14997 7.45978 8.40997L10.5898 10.91C11.3498 11.52 12.6398 11.52 13.3998 10.91L16.5298 8.40997C16.8498 8.14997 17.3298 8.19997 17.5798 8.52997C17.8398 8.84997 17.7898 9.32997 17.4598 9.57997L14.3298 12.08C13.6898 12.61 12.8398 12.87 11.9998 12.87Z" fill="currentColor"/>
+        </svg> alaajarwan38@gmail.com</a>
+        <a class="pill" href="assets/Alaa-Jarwan-CV.pdf" download>Download CV ↗</a>
+      </div>
+      <div class="socials reveal">
+        <a href="https://www.behance.net/amjmedia01" target="_blank" rel="noopener noreferrer" aria-label="Behance">Bē</a>
+        <a href="mailto:alaajarwan38@gmail.com" aria-label="Email Alaa"><svg class="email-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path d="M17 21.25H7C3.35 21.25 1.25 19.15 1.25 15.5V8.5C1.25 4.85 3.35 2.75 7 2.75H17C20.65 2.75 22.75 4.85 22.75 8.5V15.5C22.75 19.15 20.65 21.25 17 21.25ZM7 4.25C4.14 4.25 2.75 5.64 2.75 8.5V15.5C2.75 18.36 4.14 19.75 7 19.75H17C19.86 19.75 21.25 18.36 21.25 15.5V8.5C21.25 5.64 19.86 4.25 17 4.25H7Z" fill="currentColor"/>
+          <path d="M11.9998 12.87C11.1598 12.87 10.3098 12.61 9.65978 12.08L6.52978 9.57997C6.20978 9.31997 6.14978 8.84997 6.40978 8.52997C6.66978 8.20997 7.13978 8.14997 7.45978 8.40997L10.5898 10.91C11.3498 11.52 12.6398 11.52 13.3998 10.91L16.5298 8.40997C16.8498 8.14997 17.3298 8.19997 17.5798 8.52997C17.8398 8.84997 17.7898 9.32997 17.4598 9.57997L14.3298 12.08C13.6898 12.61 12.8398 12.87 11.9998 12.87Z" fill="currentColor"/>
+        </svg></a>
+        <a href="https://dribbble.com/alaajarwan7" target="_blank" rel="noopener noreferrer" aria-label="Dribbble" title="Dribbble">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M7 4.5c5 5.5 7.5 11 9 16M3.2 10c7 .5 12-1.5 16-5M5 18c4-6 9-8 16-5"/>
+          </svg>
+        </a>
+        <a href="https://medium.com/@alaajarwan38" target="_blank" rel="noopener noreferrer" aria-label="Medium" title="Medium">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <ellipse cx="7" cy="12" rx="6" ry="6"/>
+            <ellipse cx="17" cy="12" rx="3" ry="5.6"/>
+            <ellipse cx="22" cy="12" rx="1" ry="5"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/alaajarwan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <circle cx="5" cy="5" r="2"/>
+            <path d="M3.3 9h3.4v12H3.3zM10 9h3.3v1.6c.8-1.2 1.9-1.9 3.5-1.9 3.2 0 4.2 2 4.2 5V21h-3.4v-6.5c0-1.7-.4-2.8-1.9-2.8-1.8 0-2.3 1.2-2.3 3.1V21H10z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="footer-meta">
+        <span>© <span id="year">2026</span> Alaa Jarwan</span>
+        <a href="https://www.behance.net/amjmedia01" target="_blank" rel="noopener noreferrer">More on Behance ↗</a>
+        <span>Amman, JO · GMT+3 <a class="back-top" href="#" aria-label="Back to top">↑</a></span>
+      </div>
+      <div class="signature" aria-hidden="true">Alaa Jarwan</div>
+    </footer>
+  </body>
+</html>

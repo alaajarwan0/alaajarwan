@@ -1,0 +1,156 @@
+{
+  "assets/Bil3rabi.png": [
+    {
+      "src": "assets/optimized/bil3rabi-640.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 139630
+    },
+    {
+      "src": "assets/optimized/bil3rabi-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 414866
+    },
+    {
+      "src": "assets/optimized/bil3rabi-2000.webp",
+      "width": 2000,
+      "height": 1500,
+      "bytes": 1054004
+    }
+  ],
+  "assets/rukoan.png": [
+    {
+      "src": "assets/optimized/rukoan-640.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 217486
+    },
+    {
+      "src": "assets/optimized/rukoan-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 789352
+    },
+    {
+      "src": "assets/optimized/rukoan-2000.webp",
+      "width": 2000,
+      "height": 1500,
+      "bytes": 2128646
+    }
+  ],
+  "assets/technomium.png": [
+    {
+      "src": "assets/optimized/technomium-640.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 214492
+    },
+    {
+      "src": "assets/optimized/technomium-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 760668
+    },
+    {
+      "src": "assets/optimized/technomium-2000.webp",
+      "width": 2000,
+      "height": 1500,
+      "bytes": 2119706
+    }
+  ],
+  "assets/alps_driving_school.png": [
+    {
+      "src": "assets/optimized/alps_driving_school-640.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 213584
+    },
+    {
+      "src": "assets/optimized/alps_driving_school-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 747804
+    },
+    {
+      "src": "assets/optimized/alps_driving_school-2000.webp",
+      "width": 2000,
+      "height": 1500,
+      "bytes": 2075718
+    }
+  ],
+  "assets/dynamicbrand.png": [
+    {
+      "src": "assets/optimized/dynamicbrand-640.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 117110
+    },
+    {
+      "src": "assets/optimized/dynamicbrand-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 396508
+    },
+    {
+      "src": "assets/optimized/dynamicbrand-2000.webp",
+      "width": 2000,
+      "height": 1500,
+      "bytes": 1103078
+    }
+  ],
+  "assets/shidmanholding.png": [
+    {
+      "src": "assets/optimized/shidmanholding-640.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 82420
+    },
+    {
+      "src": "assets/optimized/shidmanholding-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 261682
+    },
+    {
+      "src": "assets/optimized/shidmanholding-2000.webp",
+      "width": 2000,
+      "height": 1500,
+      "bytes": 663926
+    }
+  ],
+  "assets/bil3rabi_recruitment.png": [
+    {
+      "src": "assets/optimized/bil3rabi_recruitment-640.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 48234
+    },
+    {
+      "src": "assets/optimized/bil3rabi_recruitment-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 117812
+    },
+    {
+      "src": "assets/optimized/bil3rabi_recruitment-2000.webp",
+      "width": 2000,
+      "height": 1500,
+      "bytes": 240724
+    }
+  ],
+  "assets/portrait.png": [
+    {
+      "src": "assets/optimized/portrait-256.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 33430
+    },
+    {
+      "src": "assets/optimized/portrait-512.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 127086
+    }
+  ]
+}

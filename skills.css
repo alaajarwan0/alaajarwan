@@ -1,0 +1,240 @@
+/* Figma AI Skills: summary column and full-length instructions panel */
+.skill-detail {
+  padding-bottom: 112px;
+}
+
+.skill-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.skill-summary {
+  padding-top: 40px;
+  overflow-wrap: anywhere;
+}
+
+.skill-summary h1 {
+  margin: 20px 0 24px;
+  font-size: 42px;
+  line-height: 1.08;
+}
+
+.skill-description {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.skill-creator {
+  margin-top: 28px;
+  font-size: 14px;
+}
+
+.skill-placeholder {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.skill-summary .pill {
+  margin-top: 24px;
+}
+
+.skill-panel {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--soft);
+  padding: 32px;
+}
+
+.skill-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Skill actions wrap naturally on narrow screens. */
+.skill-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-toolbar h2 {
+  font-size: 28px;
+}
+
+.skill-toolbar button:disabled {
+  opacity: .65;
+  cursor: default;
+}
+
+.skill-copy-status {
+  min-height: 24px;
+  margin: 12px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.skill-markdown {
+  max-width: 72ch;
+  min-height: 240px;
+  overflow-wrap: anywhere;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.skill-markdown > * + * {
+  margin-top: 20px;
+}
+
+.skill-markdown h2,
+.skill-markdown h3,
+.skill-markdown h4,
+.skill-markdown h5,
+.skill-markdown h6 {
+  margin-top: 32px;
+  line-height: 1.25;
+}
+
+.skill-markdown h2 {
+  font-size: 30px;
+}
+
+.skill-markdown h3 {
+  font-size: 25px;
+}
+
+.skill-markdown > :first-child {
+  margin-top: 0;
+}
+
+.skill-markdown p,
+.skill-markdown li {
+  white-space: pre-line;
+}
+
+.skill-markdown ul,
+.skill-markdown ol {
+  padding-left: 24px;
+  margin-bottom: 0;
+}
+
+.skill-markdown li + li {
+  margin-top: 8px;
+}
+
+.skill-markdown a {
+  color: var(--skill-link, #995037);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.skill-markdown code {
+  font-family: 'Geist Mono', monospace;
+  font-size: .85em;
+  white-space: pre-wrap;
+}
+
+.skill-markdown pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+  white-space: pre;
+}
+
+.skill-markdown pre code {
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+.skill-markdown pre:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.skill-copy-fallback label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.skill-copy-fallback textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font: 13px/1.6 'Geist Mono', monospace;
+}
+
+/* Responsive: stack summary and instructions on mobile */
+@media (max-width: 809px) {
+  .skill-detail {
+    padding-bottom: 64px;
+  }
+
+  .skill-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .skill-summary {
+    padding-top: 0;
+  }
+
+  .skill-summary h1 {
+    font-size: 36px;
+  }
+
+  .skill-panel {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .skill-markdown pre {
+    padding: 14px;
+  }
+}
+
+/* Tables in the original skill instructions */
+.skill-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 14px;
+}
+
+.skill-markdown th,
+.skill-markdown td {
+  padding: 12px;
+  border: 1px solid var(--line);
+  text-align: start;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.skill-markdown th {
+  background: var(--panel);
+  font-weight: 500;
+}
+
+/* Preserve the existing brighter link color in dark mode. */
+:root[data-theme=dark] {
+  --skill-link: var(--accent);
+}
+
+.skill-actions a[aria-disabled="true"] {
+  opacity: .65;
+  cursor: default;
+}
