@@ -4,3 +4,13 @@ node_modules/
 !.env.example
 .DS_Store
 Thumbs.db
+/ASSETS.md
+/PERFORMANCE.md
+/QA-FIXES.md
+/VERIFICATION.md
+/Start-Portfolio.ps1
+/ASSETS.md
+/PERFORMANCE.md
+/QA-FIXES.md
+/VERIFICATION.md
+/Start-Portfolio.ps1
